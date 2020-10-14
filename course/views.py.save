@@ -1,0 +1,14 @@
+from django.shortcuts import render
+
+# Create your views here.
+
+# views.py
+from django.views.generic import ListView
+from course.models import Course
+
+class CourseList(ListView):
+    model = Course
+
+
+class CBookDetailView(generic.DetailView):
+    model = Book

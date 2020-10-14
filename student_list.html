@@ -1,0 +1,8 @@
+<h1>Students</h1>
+<ul>
+{% for student in object_list %}
+    <li>{{ student.pub_date|date }} - {{ student.headline }}</li>
+{% empty %}
+    <li>No student yet.</li>
+{% endfor %}
+</ul>
